@@ -4,106 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitalis Media</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background: #000;
-        }
+    body {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: #000;
+    }
 
-        .container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3rem 1.5rem;
-            z-index: 10;
-            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.3) 100%);
-        }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 1.5rem;
+        z-index: 10;
+        background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.3) 100%);
+    }
 
-        .logo-container {
-            margin-top: 1rem;
-        }
+    .logo-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .logo {
-            height: 60px;
-            width: auto;
-            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
-        }
+    .logo {
+        height: 80px;
+        width: auto;
+        filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    }
 
-        .center {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
 
-        .text {
-            font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            color: #E2BD23;
-            letter-spacing: 0.02em;
-            text-shadow: 0 2px 12px rgba(0,0,0,0.6);
-        }
+    .text {
+        font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #E2BD23;
+        letter-spacing: 0.02em;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    }
 
-        .contact-container {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 13px;
-        }
+    .contact-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 13px;
+    }
 
-        .contact-container a {
-            color: #E2BD23;
-            text-decoration: none;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-            transition: opacity 0.2s ease;
-        }
+    .contact-container a {
+        color: #E2BD23;
+        text-decoration: none;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        transition: opacity 0.2s ease;
+    }
 
-        .contact-container a:hover {
-            opacity: 0.8;
-        }
+    .contact-container a:hover {
+        opacity: 0.8;
+    }
 
-        .divider {
-            color: #E2BD23;
-            opacity: 0.5;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-        }
-    </style>
+    .divider {
+        color: #E2BD23;
+        opacity: 0.5;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+</style>
 </head>
 <body>
     <div class="container">
