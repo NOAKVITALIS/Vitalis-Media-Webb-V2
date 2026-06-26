@@ -17,7 +17,7 @@ export default function VitalisLanding() {
       <div style={styles.overlay}>
         <div style={styles.logoContainer}>
           <img
-            src="/VM_Logo&Ikoner_V2_26"
+            src="/VM_Logo_Ikoner_V2_26"
             alt="Vitalis Media"
             style={styles.logo}
           />
