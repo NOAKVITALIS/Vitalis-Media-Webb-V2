@@ -3,130 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitalis Media</title>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    body {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        background: #000;
-    }
+    <!-- Primär SEO -->
+    <title>Vitalis Media – Brand Storytelling | Göteborg</title>
+    <meta name="description" content="Vitalis Media är ett produktionsbolag i Göteborg. Vi skapar brand storytelling genom film, foto och grafisk design – för varumärken som vill kännas, inte bara synas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vitalis.media/">
 
-    .container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+    <!-- Open Graph (Instagram, LinkedIn, iMessage m.fl.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vitalis.media/">
+    <meta property="og:title" content="Vitalis Media – Brand Storytelling | Göteborg">
+    <meta property="og:description" content="Vitalis Media är ett produktionsbolag i Göteborg. Vi skapar brand storytelling genom film, foto och grafisk design – för varumärken som vill kännas, inte bara synas.">
+    <meta property="og:image" content="https://vitalis.media/VM_Logo_Ikoner_V2_26.png">
+    <meta property="og:locale" content="sv_SE">
 
-    video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    <!-- Twitter/X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vitalis Media – Brand Storytelling | Göteborg">
+    <meta name="twitter:description" content="Vitalis Media är ett produktionsbolag i Göteborg. Vi skapar brand storytelling genom film, foto och grafisk design – för varumärken som vill kännas, inte bara synas.">
+    <meta name="twitter:image" content="https://vitalis.media/VM_Logo_Ikoner_V2_26.png">
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3rem 1.5rem;
-        z-index: 10;
-        background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.3) 100%);
+    <!-- Strukturerad data för Google & AI-sökmotorer -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vitalis Media",
+      "image": "https://vitalis.media/VM_Logo_Ikoner_V2_26.png",
+      "url": "https://vitalis.media",
+      "email": "info@vitalis.media",
+      "description": "Vitalis Media är ett produktionsbolag i Göteborg som skapar brand storytelling genom film, foto och grafisk design.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Göteborg",
+        "addressCountry": "SE"
+      },
+      "sameAs": [
+        "https://instagram.com/vitalis.social.media"
+      ]
     }
+    </script>
 
-    .logo-container {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logo {
-        height: 200px;
-        width: auto;
-        filter: drop-shadow(0 0px 0px rgba(0,0,0,0.4));
-    }
-
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2.5rem;
-    }
-
-    .text {
-        font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        color: #E2BD23;
-        letter-spacing: 0.02em;
-        text-shadow: 0 2px 12px rgba(0,0,0,0.6);
-    }
-
-    .contact-container {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 13px;
-    }
-
-    .contact-container a {
-        color: #E2BD23;
-        text-decoration: none;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-        transition: opacity 0.2s ease;
-    }
-
-    .contact-container a:hover {
-        opacity: 0.8;
-    }
-
-    .divider {
-        color: #E2BD23;
-        opacity: 0.5;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    }
-</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+        }
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 1.5rem;
+            z-index: 10;
+            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.3) 100%);
+        }
+        .logo-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            height: 200px;
+            width: auto;
+            filter: drop-shadow(0 0px 0px rgba(0,0,0,0.4));
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        .text {
+            font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #E2BD23;
+            letter-spacing: 0.02em;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+        }
+        .contact-container {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: "Stack Sans Notch", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 13px;
+        }
+        .contact-container a {
+            color: #E2BD23;
+            text-decoration: none;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+            transition: opacity 0.2s ease;
+        }
+        .contact-container a:hover {
+            opacity: 0.8;
+        }
+        .divider {
+            color: #E2BD23;
+            opacity: 0.5;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        /* Osynlig text för sökmotorer/AI - läses av maskiner, syns inte visuellt */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div class="container">
         <video autoplay muted loop playsinline>
-            <source src="/VM_ShowReel_V2_260626.mov" type="video/mp4">
+            <source src="/VM_ShowReel_V2_260626.mov" type="video/quicktime">
         </video>
-
         <div class="overlay">
             <div class="logo-container">
-                <img src="./VM_Logo_Ikoner_V2_26.png" alt="Vitalis Media" class="logo">
+                <img src="./VM_Logo_Ikoner_V2_26.png" alt="Vitalis Media – Brand Storytelling Göteborg" class="logo">
             </div>
-
+            <!-- Dold rubrik/text för sökmotorer och AI, syns inte visuellt -->
+            <h1 class="sr-only">Vitalis Media – Brand Storytelling Worth Watching</h1>
+            <p class="sr-only">Vitalis Media är ett produktionsbolag i Göteborg som skapar brand storytelling genom film, foto och grafisk design för varumärken som vill kännas, inte bara synas.</p>
             <div class="center">
                 <p class="text">Full website coming soon</p>
             </div>
-
             <div class="contact-container">
                 <a href="https://instagram.com/vitalis.social.media">@vitalis.social.media</a>
                 <p class="divider">·</p>
